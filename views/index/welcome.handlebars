@@ -1,4 +1,7 @@
 <h1>Welcome to Storybooks</h1>
 <p>Hi there, this is Storybooks 1.0.0</p>
-<p>Post any stories you'd like here. Stories you share can be private (like a diary), or share away for the world to see your talent!</p>
-<a class="btn red darken-1" href="/auth/google"> <i class="fa ga-google left"></i> Login with Google</a>
+<p>Post any stories you'd like here. Stories you share can be private (like a diary), or share away for the world to read about your thoughts!</p>
+{{#if user}}
+{{else}}
+<a class="btn red darken-1" href="/auth/google"> <i class="fa fa-google left"></i> Login with Google</a>
+{{/if}}

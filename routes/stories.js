@@ -4,11 +4,11 @@ const passport = require('passport');
 const {ensureAuthenticated} = require('../helpers/auth');
 
 router.get('/', (req, res) => {
-    res.render('stories/index')
+    res.render('stories/index');
 });
 
 router.get('/add', ensureAuthenticated, (req, res) => {
-    res.render('stories/add')
+    res.render('stories/add');
 });
 
 

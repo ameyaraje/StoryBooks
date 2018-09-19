@@ -8,16 +8,16 @@
             </div>
             <div class="card-content center-align">
                 <h5>{{title}}</h5>
-                <p class="story-text">{{body}}</p>
+                <p class="story-text">{{stripTags (truncate body 12s0)}}</p>
                 <br>
                 <div class="chip">
                     <img src="{{user.image}}"> {{user.firstName}} {{user.lastName}}
                 </div>
             </div>
             <div class="card-action center-align">
-                <div class="btn grey" href="/stories/show/{{id}}">Read More
+                <a class="btn grey" href="/stories/show/{{id}}">Read More
 
-                </div>
+                </a>
             </div>
         </div>
     </div>

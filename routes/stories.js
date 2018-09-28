@@ -47,4 +47,15 @@ router.post('/', (req, res) => {
         });
 });
 
+router.get('/show/:id', (req, res) => {
+    Story.findOne({
+        _id: req.params.id
+    }).populate('user')
+    .then(story => {
+        res.render('stories/show', {
+            story: story
+        })
+    });
+});
+
 module.exports = router;
